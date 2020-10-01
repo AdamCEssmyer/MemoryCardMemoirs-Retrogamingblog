@@ -6,19 +6,20 @@ html, body {
    background-size: cover;
 }
 
+h1 {
+   text-align: center;
+   color: #FC685E;
+   font-family: 'Righteous', cursive;
+}
 
 
 p {
    font-family: 'Ubuntu', sans-serif;
    font-size: 20px; 
    color: whitesmoke;
+   text-align: center;
 }
 
-h1 {
-   text-align: center;
-   color: #FC685E;
-   font-family: 'Righteous', cursive;
-}
 
 a {
    color: whitesmoke;
@@ -33,4 +34,67 @@ li{
 img {
   opacity: .5;
 }
+
+.wrapper{
+   position: absolute;
+   top: 8%;
+   left: 5%;
+   width: 70px;
+   transform: translate(-50%, -50%);
+}
+
+.navbar{
+   width: 100px;
+   height: 100px;
+   position: relative;
+   border: 5px solid #FC685E;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.navbar div{
+   height: 8px;
+   width: 60px;
+   background-color: #FC685E;
+   position: absolute;
+   transition: all 0.5s ease;
+}
+
+.navbar .first{
+   top: 25px;
+   left: 20px;
+}
+
+.navbar .second{
+   top: 45px;
+   left: 20px;
+}
+
+.navbar .third{
+   top: 65px;
+   left: 20px;
+}
+
+.navbar:hover .first {
+   width: 40px;
+   transform: translate(-1px, 30px) rotate(-58deg);
+   transition: all 0.5s;
+}
+
+.navbar:hover .second {
+   opacity: 0;
+   transition: all 0.5s;
+}
+
+.navbar:hover .third{
+   width: 40px;
+   transform: translate(18px, -10px) rotate(61deg);
+   transition: all 0.5s;
+}
+
+.navbar:hover{
+   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
 
