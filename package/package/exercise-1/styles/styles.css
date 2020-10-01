@@ -6,6 +6,7 @@ html, body {
    background-size: cover;
 }
 
+
 h1 {
    text-align: center;
    color: #FC685E;
@@ -21,19 +22,6 @@ p {
 }
 
 
-a {
-   color: whitesmoke;
-   font-family: 'Ubuntu', sans-serif;
-}
-
-li{
-   color: whitesmoke;
-   font-family: 'Ubuntu', sans-serif;
-}
-
-img {
-  opacity: .5;
-}
 
 .wrapper{
    position: absolute;
@@ -96,5 +84,4 @@ img {
    border-radius: 50%;
    transition: all 0.3s ease;
 }
-
 
