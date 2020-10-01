@@ -1,25 +1,36 @@
-html {
+html, body {
    height: 100%;
+   background-image: url(../img/Retrozone.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-
-body {
-   background: #D284F5 !important;
-}
 
 
 p {
-   font-family: 'Peddana', serif;
+   font-family: 'Ubuntu', sans-serif;
    font-size: 20px; 
+   color: whitesmoke;
 }
 
 h1 {
    text-align: center;
-   color: #F40B36;
+   color: #FC685E;
    font-family: 'Righteous', cursive;
 }
 
+a {
+   color: whitesmoke;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+   color: whitesmoke;
+   font-family: 'Ubuntu', sans-serif;
+}
+
 img {
-  margin: 30px 0px;
+  opacity: .5;
 }
 
