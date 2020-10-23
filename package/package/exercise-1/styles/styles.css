@@ -21,67 +21,109 @@ p {
    text-align: center;
 }
 
-
-
-.wrapper{
-   position: absolute;
-   top: 8%;
-   left: 5%;
-   width: 70px;
-   transform: translate(-50%, -50%);
+.navbar {
+   width: 150px;
+   height: 40%;
+   background-color: #262626;
+   position: fixed;
+   top: 0;
+   left: -300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20% 0 60% 0;
+   transition: left .8s cubic-bezier(1, 0, 0, 1);
 }
 
-.navbar{
-   width: 100px;
-   height: 100px;
-   position: relative;
-   border: 5px solid #FC685E;
+.change {
+   left: 0;
+}
+
+.hamburger-menu {
+   width: 50px;
+   height: 50px;
+   position: fixed;
+   top: 30px;
+   left: 20px;
    cursor: pointer;
-   transition: all 0.3s ease;
+   display: flex;
+   flex-direction:column;
+   justify-content: space-around;
 }
 
-.navbar div{
-   height: 8px;
-   width: 60px;
+.line {
+   width:100%;
+   height: 3px;
    background-color: #FC685E;
-   position: absolute;
-   transition: all 0.5s ease;
+   transition: all 0.8s;
 }
 
-.navbar .first{
-   top: 25px;
-   left: 20px;
+.change .line-1 {
+   transform: rotateZ(-405deg) translate(-8px, 6px);
 }
 
-.navbar .second{
-   top: 45px;
-   left: 20px;
-}
-
-.navbar .third{
-   top: 65px;
-   left: 20px;
-}
-
-.navbar:hover .first {
-   width: 40px;
-   transform: translate(-1px, 30px) rotate(-58deg);
-   transition: all 0.5s;
-}
-
-.navbar:hover .second {
+.change .line-2 {
    opacity: 0;
-   transition: all 0.5s;
 }
 
-.navbar:hover .third{
-   width: 40px;
-   transform: translate(18px, -10px) rotate(61deg);
-   transition: all 0.5s;
+.change .line-3 {
+   transform: rotateZ(405deg) translate(-8px,-6);
 }
 
-.navbar:hover{
-   border-radius: 50%;
-   transition: all 0.3s ease;
+.nav-list {
+   text-align: left;
 }
+
+ul {
+   list-style-type: none;
+}
+.nav-item {
+   margin: 25px;
+}
+
+.nav-link {
+   text-decoration: none;
+   font-size: 15px;
+   color: whitesmoke;
+   font-weight: 300;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   position: relative;
+   padding: 3px 0;
+}
+
+.nav-link::before,
+.nav-link::after {
+   content: "";
+   width: 100%;
+   height: 2px;
+   background-color: chocolate;
+   position: absolute;
+   left: 0;
+   transform: scaleX(0);
+   transition: transform 0.5s;
+}
+
+.nav-link::after {
+   bottom: 0;
+   transform-origin: right;
+}
+
+.nav-link::before {
+   top: 0;
+   transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after{
+   transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
 
