@@ -59,15 +59,15 @@ p {
 }
 
 .change .line-1 {
-   transform: rotateZ(-405deg) translate(-8px, 6px);
+   transform: rotateZ(90deg) translate(15px, 10px);
 }
 
 .change .line-2 {
-   opacity: 0;
+   transform: rotateZ(90deg);
 }
 
 .change .line-3 {
-   transform: rotateZ(405deg) translate(-8px,-6);
+   transform: rotateZ(90deg) translate(-15px, -10px);
 }
 
 .nav-list {
